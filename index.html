@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+    
+    <title>Simulador de Credito</title>
+</head>
+<body>
+        
+
+        <main class="contenedor mt-2 mb-1">
+
+            
+
+            <form id="nuevo-credito" class="formulario" action="#">
+                <h1 class="titulo text-center">
+                    Simulador de Credito
+                </h1>
+                
+
+                <div id="formulario"class="contenedor-formulario">
+
+                    
+                    
+                    <div class="campo">
+                        <label class="text-center" for="compra">Indique el valor de la compra:</label>
+                        <input type="text" name="compra" id="compra" minlength="3" maxlength="7">
+                    </div>
+                        
+                    <div class="campo">
+                        <label class="text-center" for="cuota">Indique el numero de cuotas:</label>
+                        <input type="text" name="cuota" id="cuota" minlength="1" maxlength="2">
+                    </div>
+
+                    <div class="campo">
+                        <label class="text-center" for="interes">Indique la tasa de interes mensual:</label>
+                        <input type="text" name="interes" id="interes" minlength="1" maxlength="6">
+                    </div>
+                    
+                    <div class="campo">
+                        <input class="btn" type="submit" value="Validar">
+                    </div>
+                    
+                    
+                </div>
+            </form>
+
+
+        </main>
+
+        <section class="contenedor cont-datos">
+            
+            <div class="cont-compra">
+                <h2 class="titulo-compra">
+                    Compra
+                </h2>
+            </div>
+            
+            <div class="cont-valorcompra">
+                <p>
+                    Por una compra de:
+                </p>
+                <p id="valorCompra" class="texto-valores">
+                    $ 
+                </p> 
+            </div>  
+            
+            <div class="cont-valorcuota"> 
+                <p class="text-center">
+                    Pagarias <span id="numeroCuota">--</span>  cuotas mensuales por un valor aproximado de:
+                </p>
+                <p id='valorCuota' class="texto-valores">
+                    $ 
+                </p>
+            </div>
+
+            <div class="cont-valorcompra">
+                <p>
+                    Para una compra total aproximada de:
+                </p>
+                <p id="totalCompra" class="texto-valores">
+                    $ 
+                </p> 
+            </div>
+        </section>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
